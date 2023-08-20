@@ -19,7 +19,7 @@
                         <p class="text-xl font-semibold pb-6">---SALE FEVER---</p>
                         <h1 class="text-5xl font-bold pb-12">Purchase TK 200 or above & get <span class="text-fuchsia-600">20% off</span></h1>
                         <span class="pr-2 text-lg font-semibold">Use Promo Code</span>
-                        <button class="btn btn-secondary">Get Started</button>
+                        <button class="btn btn-secondary text-2xl">SELL200</button>
                       </div>
                     </div>
                   </div>
@@ -30,11 +30,11 @@
               <div class="flex flex-col lg:flex-row">
                 <div class="flex-1  m-28 mr-0 grid grid-cols md:grid-cols-2 lg:grid-cols-3">
                   <!-- card1 -->
-                  <div class="card w-60 bg-base-100 mb-14">
-                    <figure class="px-2 py-4">
-                      <img src="/images/prod1.png" alt="Shoes" class="rounded-lg px-20 py-8 bg-gray-300" />
+                  <div  onclick="token(this)"  class="card w-60 bg-base-100 mb-14"> 
+                    <figure  class="px-2 py-4">
+                      <img src="/images/prod1.png" alt="" class="rounded-lg px-20 py-8 bg-gray-300" />
                     </figure>
-                    <div class="card-body items-center text-center">
+                    <div  class="card-body items-center text-center">
                       <div class="rating">
                         <input type="radio" name="rating-4" class="mask mask-star-2 bg-yellow-400" />
                         <input type="radio" name="rating-4" class="mask mask-star-2 bg-yellow-400"  />
@@ -43,13 +43,13 @@
                         <input type="radio" name="rating-4" class="mask mask-star-2 bg-yellow-600" />
                       </div>
                       <h4 class="font-semibold">K. Accessories</h4>
-                      <p class="text-gray-400"><span>39.00</span> TK</p>
+                      <p class="text-gray-400">39.00 TK</p>
                     </div>
                   </div>
                   <!-- card2 -->
-                  <div class="card w-60 bg-base-100 mb-14">
+                  <div  onclick="token(this)" class="card w-60 bg-base-100 mb-14">
                     <figure class="px-2 py-4">
-                      <img src="/images/prod2.png" alt="Shoes" class="rounded-lg px-20 py-10 bg-gray-300" />
+                      <img src="/images/prod2.png" alt="" class="rounded-lg px-20 py-10 bg-gray-300" />
                     </figure>
                     <div class="card-body items-center text-center">
                       <div class="rating">
@@ -59,14 +59,14 @@
                         <input type="radio" name="rating-4" class="mask mask-star-2 bg-yellow-600" />
                         <input type="radio" name="rating-4" class="mask mask-star-2 bg-yellow-600" />
                       </div>
-                      <h4 class="font-semibold">K. Accessories</h4>
+                      <h4 class="font-semibold">Others</h4>
                       <p class="text-gray-400">25.00 TK</p>
                     </div>
                   </div>
                   <!-- card3 -->
-                  <div class="card w-60 bg-base-100 mb-14">
+                  <div  onclick="token(this)" class="card w-60 bg-base-100 mb-14">
                     <figure class="px-2 py-4">
-                      <img src="/images/prod3.png" alt="Shoes" class="rounded-lg px-20 py-10 bg-gray-300" />
+                      <img src="/images/prod3.png" alt="" class="rounded-lg px-20 py-10 bg-gray-300" />
                     </figure>
                     <div class="card-body items-center text-center">
                       <div class="rating">
@@ -81,9 +81,9 @@
                     </div>
                   </div>
                    <!-- card4 -->
-                   <div class="card w-60 bg-base-100 mb-14">
+                   <div  onclick="token(this)" class="card w-60 bg-base-100 mb-14">
                     <figure class="px-2 py-4">
-                      <img src="/images/prod4.png" alt="Shoes" class="rounded-lg px-20 py-14 bg-gray-300" />
+                      <img src="/images/prod4.png" alt="" class="rounded-lg px-20 py-14 bg-gray-300" />
                     </figure>
                     <div class="card-body items-center text-center">
                       <div class="rating">
@@ -98,9 +98,9 @@
                     </div>
                   </div>
                   <!-- card5 -->
-                  <div class="card w-60 bg-base-100 mb-14">
+                  <div  onclick="token(this)" class="card w-60 bg-base-100 mb-14">
                     <figure class="px-2 py-4">
-                      <img src="/images/prod5.png" alt="Shoes" class="rounded-lg px-20 py-11 bg-gray-300" />
+                      <img src="/images/prod5.png" alt="" class="rounded-lg px-20 py-11 bg-gray-300" />
                     </figure>
                     <div class="card-body items-center text-center">
                       <div class="rating">
@@ -115,9 +115,9 @@
                     </div>
                   </div>
                   <!-- card6 -->
-                  <div class="card w-60 bg-base-100 mb-14">
+                  <div  onclick="token(this)" class="card w-60 bg-base-100 mb-14">
                     <figure class="px-2 py-4">
-                      <img src="/images/prod6.png" alt="Shoes" class="rounded-lg px-20 py-12 bg-gray-300" />
+                      <img src="/images/prod6.png" alt="" class="rounded-lg px-20 py-12 bg-gray-300" />
                     </figure>
                     <div class="card-body items-center text-center">
                       <div class="rating">
@@ -131,6 +131,7 @@
                       <p class="text-gray-400">159.00 TK</p>
                     </div>
                   </div>
+
                 </div>
 
 
@@ -143,10 +144,13 @@
                   </div>
               </div>
               <div class="w-72 card   bg-base-100  h-80">
-                <div class="pt-36 pl-8 pr-8 pb-3"><hr></div>
+                <div class="pl-8 pt-6" id="selected-items">
+
+                </div>
+                <div class="pt-10 pl-8 pr-8 pb-3"><hr></div>
 
                 <div class=" pl-8 pr-8 py-6">
-                  <h3 class="font-semibold">Total Price: <span class="text-gray-400">00.00 TK</span></h3>
+                  <h3 class="font-semibold">Total Price: <span id="totals" class="text-gray-400">00.00 TK</span></h3>
                 <h3 class="font-semibold">Discount: <span class="text-gray-400">00.00 TK</span></h3>
                 <h3 class="font-semibold pb-4">Total: <span class="text-gray-400">00.00 TK</span></h3>
                 <hr>
